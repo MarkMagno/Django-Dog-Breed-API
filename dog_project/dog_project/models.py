@@ -12,7 +12,7 @@ class Breed(models.Model):
         (MEDIUM, 'Medium'),
         (LARGE, 'Large'),
     ]
-
+    ##Generated using AI
     name = models.CharField(max_length=100)
     size = models.CharField(max_length=6, choices=SIZE_CHOICES)
     friendliness = models.IntegerField(choices=[(i, i) for i in range(1, 6)])
@@ -23,7 +23,7 @@ class Breed(models.Model):
     def __str__(self):
         return self.name
 
-
+##Generated using AI
 class Dog(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField()
